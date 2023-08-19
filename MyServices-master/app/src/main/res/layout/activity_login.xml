@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        android:src="@drawable/welcome"/>
+    <TextView
+        android:id="@+id/tv_Let"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_marginTop="20dp"
+        android:text="Let's you in"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"/>
+    <TextView
+        android:id="@+id/tv_facebook"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Continue with Facebook"
+        android:textSize="20dp"
+        android:paddingTop="15dp"
+        android:paddingStart="35dp"
+        android:drawableStart="@drawable/facebook"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_Let"/>
+
+    <TextView
+        android:id="@+id/tv_google"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Continue with Google"
+        android:drawableStart="@drawable/google"
+        android:textSize="20dp"
+        android:paddingTop="15dp"
+        android:paddingStart="35dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_facebook" />
+    <TextView
+        android:id="@+id/tv_apple"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Continue with Apple"
+        android:drawableStart="@drawable/apple"
+        android:textSize="20dp"
+        android:paddingTop="15dp"
+        android:paddingStart="35dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_google" />
+        <TextView
+            android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_apple"
+        android:layout_marginTop="30dp"/>
+    
+    
+        <Button
+            android:id="@+id/Btn_Sign"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:background="@drawable/background_button"
+            android:text="Sign in with password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_or"
+            android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/RV_sginup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Btn_Sign">
+
+
+        <TextView
+            android:id="@+id/tv_DontAccount"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textStyle="bold"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="100dp"/>
+        <TextView
+            android:id="@+id/tv_Sginup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="#9A56FF"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/tv_DontAccount"
+            android:layout_marginTop="35dp"
+
+
+
+            />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

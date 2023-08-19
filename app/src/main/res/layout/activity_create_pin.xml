@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePIN">
+
+    <RelativeLayout
+        android:id="@+id/RL_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/arrow_back" />
+        <TextView
+            android:id="@+id/tv_PIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/back"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="13dp"
+            android:text="Create New PIN"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RL_back"
+        android:layout_marginTop="100dp"
+        android:text="Add a PIN number to make your account \n                         more secure"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_number"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_add"
+            android:layout_marginTop="70dp"
+            android:inputType="number"
+             app:itemWidth="60dp"
+            app:itemHeight="60dp"
+            android:itemBackground="#F5F5F8"
+            android:textSize="20dp"
+            app:itemRadius="10dp"
+            app:itemSpacing="15dp"
+            app:lineColor="@color/grey_700"
+            app:viewType="rectangle"
+            >
+        </com.chaos.view.PinView>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="55dp"
+        android:text="Continue"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

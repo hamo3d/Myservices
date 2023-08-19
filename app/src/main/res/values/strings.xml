@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Services</string>
+    <string name="create_services">Create Services</string>
+    <string name="service_name">Service name</string>
+    <string name="service_price">service price</string>
+    <string name="create">create</string>
+    <string name="reservation">reservation</string>
+
+
+    <string-array name="service_options">
+        <item>Select a service</item>
+        <item>Cleaning</item>
+        <item>Repairing</item>
+        <item>Painting</item>
+        <item>Laundry</item>
+</string-array>
+
+
+    <string-array name="account_type">
+        <item>Select a user type</item>
+        <item>user</item>
+        <item>professional</item>
+    </string-array>
+
+</resources>
