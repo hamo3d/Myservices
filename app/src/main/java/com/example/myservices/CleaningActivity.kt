@@ -31,6 +31,7 @@ class CleaningActivity : AppCompatActivity(), ClickAction {
         binding = ActivityCleaningBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        loading(true);
         // إعداد شريط الأدوات وعرض الزر الرجوع
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
