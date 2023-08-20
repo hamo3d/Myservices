@@ -95,9 +95,12 @@ class ReservationActivity : AppCompatActivity() ,OnDeleteClickListener{
                 .document(reservation?.documentId!!)
                 ?.delete()
                 ?.addOnSuccessListener {
+
                     // بعد حذف الحجز بنجاح
+                    reservations.remove(reservation)
+                    adapter.notifyDataSetChanged()
                     Toast.makeText(this@ReservationActivity, "تم حذف الحجز بنجاح", Toast.LENGTH_SHORT).show()
-                    loadData() // قم بتحديث القائمة بعد الحذف
+
                 }
                 ?.addOnFailureListener { e ->
                     // في حالة فشل عملية الحذف
